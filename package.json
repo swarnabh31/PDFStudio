@@ -1,0 +1,1 @@
+{"name":"pdf-studio","private":true,"type":"module","scripts":{"dev":"vite","build":"tsc --noEmit && vite build","preview":"vite preview"},"dependencies":{"@neslinesli93/qpdf-wasm":"^0.3.0","fflate":"^0.8.2","pdf-lib":"^1.17.1","pdfjs-dist":"^4.4.168"},"devDependencies":{"typescript":"~5.5.4","vite":"^8.3.4"}}

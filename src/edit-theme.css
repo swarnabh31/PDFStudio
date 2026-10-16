@@ -1,0 +1,25 @@
+/* Injected into the embedded text editor so it matches the PDF Studio shell. */
+:root,:root[data-theme="dark"]{--bg:#04061a;--bar:#0a1227;--fg:#eef0fb;--mut:#8b93b4;--line:#1b2441;--acc:#5b46ff;--accfg:#fff;--hl:rgba(122,107,255,.2);color-scheme:dark;
+  --font:"Outfit",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+body{font:14px/1.45 var(--font);-webkit-font-smoothing:antialiased}
+header{gap:10px;padding:9px max(24px,calc((100% - 1400px)/2));min-height:55px;background:var(--bar);border-bottom:1px solid var(--line)}
+h1{font-size:16px;font-weight:700;letter-spacing:-.01em;margin:0;padding-right:14px;border-right:1px solid var(--line)}
+button,label.btn{display:inline-flex;align-items:center;gap:8px;font-weight:500;background:#0d1630;border:1px solid var(--line);border-radius:9px;padding:7px 14px;color:var(--fg);transition:border-color .15s,background .15s}
+button:hover:not(:disabled),label.btn:hover{border-color:#2a3560;background:#111b3a}
+button:disabled{background:transparent;color:#5d6585;opacity:1}
+button.pri{background:var(--acc);border-color:var(--acc)}button.pri:hover:not(:disabled){background:#6a57ff}
+button.pri:disabled{background:rgba(91,70,255,.2);border-color:transparent;color:rgba(255,255,255,.45)}
+label.btn svg,#fonts svg{color:#7a6bff}button svg{color:#8b93b4}button:disabled svg{color:#5d6585}
+#zo,#zi{padding:6px 11px;font:500 15px var(--mono)}
+.zoom{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:9px;background:#0d1630;overflow:hidden}
+.zoom button{border:0;border-radius:0;background:none}.zoom button:hover:not(:disabled){background:#111b3a}
+.zoom output{min-width:5ch;text-align:center;font:600 12.5px var(--mono);padding:0 4px}
+.spk{display:inline-flex;color:#7a6bff;margin-left:4px}
+#stat{font-size:13px;color:var(--mut)}
+#drop{border:1.5px dashed #2a3560;border-radius:18px;background:#0c1329}#drop.over{border-color:#7a6bff;background:rgba(91,70,255,.1)}
+#drop b{font-weight:600}
+#fp{background:#0c1329;border:1px solid var(--line);border-radius:14px}
+.page{border-radius:3px;box-shadow:0 10px 40px rgba(0,0,0,.55)}
+#msg{background:#161f40;color:var(--fg);border:1px solid #2a3560;border-radius:11px}
+:focus-visible{outline:2px solid #7a6bff;outline-offset:2px}
+@media (max-width:640px){#stat{display:none}}
